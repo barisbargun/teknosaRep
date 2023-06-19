@@ -1,0 +1,252 @@
+* {
+    padding: 0;
+    margin:0;
+    font-family: sans-serif
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style-type: none;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+body{
+    padding: 20px 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+nav .rightSide a{
+    margin-right:100px;
+    color: rgb(55, 55, 55);
+}
+
+nav .rightSide a:hover {
+    border-bottom: 2px solid black;
+    color: black;
+}
+
+.cardPanel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.cardPanel .cards {
+    border-bottom: 2px solid black;
+    width: 330px;
+    height:330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.cardPanel .cards:hover{
+    transform: scale(1.1);
+}
+
+.cardPanel .cards .productImg{
+    width:150px;
+    height:150px;
+}
+
+.cardPanel .cards .productName{
+    margin:5px 0px;
+}
+
+.cardPanel .cards .productPrice{}
+
+
+
+.bottomContent {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.bottomContent div{
+    width: 33%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+
+.bottomContent div:hover{
+    filter: brightness(0.8);
+}
+
+.bottomContent div:nth-child(1) {
+    background-color: #ff7675;
+}
+.bottomContent div:nth-child(2) {
+    background-color: #55efc4;
+}
+.bottomContent div:nth-child(3) {
+    background-color: #ffeaa7;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    margin-top: 50px;
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding: 50px 0px;
+    flex-wrap: wrap;
+}
+
+footer ul {
+    margin-top:15px;
+    margin-right: 15px;
+    
+}
+
+footer .listHeader {
+    font-size: 1.1rem;
+    border-bottom: 2px solid white;
+    margin-bottom: 5px;
+}
+
+footer li {
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+footer li:hover{
+    filter: brightness(0.9);
+}
+
+
+.contactForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+
+
+.contactForm .leftSide form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contactForm .leftSide form input, .contactForm .leftSide form textarea{
+    margin: 10px 0px;
+    box-sizing: border-box;
+
+    width: 100%;
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    border-radius: 2px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 15px;
+}
+
+
+.contactForm .leftSide .sameLayer{
+    display: flex;
+    justify-content: space-between;
+}
+.contactForm .leftSide .sameLayer input{
+    width: 45%;
+}
+
+.contactForm .leftSide .buttonSubmit{
+    background-color: #007bff;
+    color: white;
+    width: 30%;
+}
+
+
+.contactForm .leftSide {
+    box-shadow: -1px 0px 20px rgb(198, 198, 198);
+    padding: 25px;
+}
+
+.contactForm .rightSide {
+    height: 450px;
+    box-shadow: 1px 0px 20px rgb(198, 198, 198);
+    background-color: #007bff;
+    color: white;
+    padding: 25px;
+}
+
+.contactForm .rightSide div {
+    margin-top:45px;
+}
+.contactForm .rightSide div p {
+    width: 400px;
+}
+
+@media screen and (max-width:1100px) {
+
+    nav .rightSide a{
+        margin-right:50px;
+
+    }
+    
+}
+
+@media screen and (max-width:900px) {
+
+    nav .rightSide a{
+        margin-right:20px;
+
+    }
+
+    .contactForm {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contactForm .leftSide, .contactForm .rightSide {
+        box-shadow: none;
+    }
+    
+
+    
+}
+
+@media screen and (max-width:650px) {
+
+    nav .rightSide a{
+        margin-right:10px;
+        flex-wrap: wrap;
+    }
+
+
+    
+
+
+    
+
+    
+}
